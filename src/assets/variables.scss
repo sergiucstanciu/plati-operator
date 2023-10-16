@@ -1,0 +1,133 @@
+/*** Default colors ***/
+
+$default-white: #fff;
+$default-black: #000000;
+
+$card-border-gray: rgba(2, 8, 16, 0.125);
+
+$primary: #003399;
+$primary-lighten-5: #c2d6ff;
+$primary-lighten-4: #99bbff;
+$primary-lighten-3: #70a0ff;
+$primary-lighten-2: #1f69ff;
+$primary-lighten-1: #0044cc;
+$primary-darken-1: #00308f;
+$primary-darken-2: #00297a;
+$primary-darken-3: #001b52;
+$primary-darken-4: #000e29;
+
+$black-087: rgba(0, 0, 0, 0.87);
+$black-06: rgba(0, 0, 0, 0.6);
+$black-058: rgba(0, 0, 0, 0.58);
+$black-054: rgba(0, 0, 0, 0.54);
+$black-042: rgba(0, 0, 0, 0.42);
+$black-038: rgba(0, 0, 0, 0.38);
+$black-026: rgba(0, 0, 0, 0.26);
+$black-02: rgba(0, 0, 0, 0.2);
+$black-018: rgba(0, 0, 0, 0.18);
+$black-012: rgba(0, 0, 0, 0.12);
+$black-006: rgba(0, 0, 0, 0.06);
+
+$grey: #9e9e9e;
+$grey-lighten-5: #fafafa;
+$grey-lighten-4: #f5f5f5;
+$grey-lighten-3: #eeeeee;
+$grey-lighten-2: #e0e0e0;
+$grey-lighten-1: #bdbdbd;
+$grey-darken-1: #757575;
+$grey-darken-2: #616161;
+$grey-darken-3: #424242;
+$grey-darken-4: #212121;
+
+$red: #f44336;
+$red-lighten-5: #ffebee;
+$red-lighten-4: #ffcdd2;
+$red-lighten-3: #ef9a9a;
+$red-lighten-2: #e57373;
+$red-lighten-1: #ef5350;
+$red-darken-1: #e53935;
+$red-darken-2: #d32f2f;
+$red-darken-3: #c62828;
+$red-darken-4: #b71c1c;
+$red-accent-1: #ff8a80;
+$red-accent-2: #ff5252;
+$red-accent-3: #ff1744;
+$red-accent-4: #d50000;
+
+$orange: #ff9800;
+$orange-lighten-5: #fff3e0;
+$orange-lighten-4: #ffe0b2;
+$orange-lighten-3: #ffcc80;
+$orange-lighten-2: #ffb74d;
+$orange-lighten-1: #ffa726;
+$orange-darken-1: #fb8c00;
+$orange-darken-2: #f57c00;
+$orange-darken-3: #ef6c00;
+$orange-darken-4: #e65100;
+$orange-accent-1: #ffd180;
+$orange-accent-2: #ffab40;
+$orange-accent-3: #ff9100;
+$orange-accent-4: #ff6d00;
+
+$green: #4caf50;
+$green-lighten-5: #e8f5e9;
+$green-lighten-4: #c8e6c9;
+$green-lighten-3: #a5d6a7;
+$green-lighten-2: #81c784;
+$green-lighten-1: #66bb6a;
+$green-darken-1: #43a047;
+$green-darken-2: #388e3c;
+$green-darken-3: #2e7d32;
+$green-darken-4: #1b5e20;
+$green-accent-1: #b9f6ca;
+$green-accent-2: #69f0ae;
+$green-accent-3: #00e676;
+$green-accent-4: #00c853;
+
+$blue: #2196f3;
+$blue-lighten-5: #e3f2fd;
+$blue-lighten-4: #bbdefb;
+$blue-lighten-3: #90caf9;
+$blue-lighten-2: #64b5f6;
+$blue-lighten-1: #42a5f5;
+$blue-darken-1: #1e88e5;
+$blue-darken-2: #1976d2;
+$blue-darken-3: #1565c0;
+$blue-darken-4: #0d47a1;
+$blue-accent-1: #82b1ff;
+$blue-accent-2: #448aff;
+$blue-accent-3: #2979ff;
+$blue-accent-4: #2962ff;
+$blue-accent-button: #0044cc;
+
+/***  Default sizes ***/
+
+$default-card-width: 500px;
+
+/***  Font sizes ***/
+
+$font-size-heading-1: 88px;
+$font-size-heading-2: 57px;
+$font-size-heading-3: 48px;
+$font-size-heading-4: 34px;
+$font-size-heading-5: 23px;
+$font-size-heading-6: 20px;
+
+$font-size-subtitle-1: 15px;
+$font-size-subtitle-2: 14px;
+
+$font-size-body-1: 16px;
+$font-size-body-2: 14px;
+
+$font-size-button: 14px;
+
+$font-size-caption: 12px;
+
+$font-size-overline: 12px;
+
+// Predefined Break-points
+$mediaMinWidthMaxSc: 1480px;
+$mediaMaxWidth: 1260px;
+$mediaBp1Width: 960px;
+$mediaBp2Width: 768px;
+$mediaMinWidth: 480px;

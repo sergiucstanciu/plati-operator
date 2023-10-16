@@ -1,0 +1,90 @@
+<div class="sidenav">
+    <mat-drawer-container class="drawer-container">
+      <mat-drawer class="drawer side-bar-class" mode="side" opened>
+        <div class="drawer__header">
+          <div class="drawer__header--icon">
+            <img
+              class="ps4-icon"
+              src="assets/images/sect4-logo.svg"
+              alt="Primaria Sectorului 4"
+            />
+            <div class="drawer__header--text">
+              <div class="drawer__header--text--title">Primăria Sectorului 4</div>
+              <div class="drawer__header--text--title--minWidth">PS 4</div>
+              <div class="drawer__header--text--subtitle faded-text">
+                Plăți Operator
+              </div>
+              <div class="drawer__header--text--subtitle--minWidth faded-text">
+                eURB 4
+              </div>
+            </div>
+            <!-- <div class="drawer__header--social-container">
+              <div
+                class="drawer__header--social"
+                (click)="redirectToinDeskPlatform()"
+              >
+                <i class="fa-solid fa-desktop pointer" style="color: #fff;"></i>
+                <span class="drawer__header--social--text faded-text pointer"
+                  >inDesk</span
+                >
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="drawer__buttons">
+          <mat-accordion>
+            <p class="menu-link" routerLink="/plati-online">
+                <i class="fa-regular fa-credit-card"></i>
+              <span>Plăți Online</span>
+            </p>
+            <p class="menu-link" routerLink="/interogari-plati">
+              <i class="fa-solid fa-landmark"></i>
+              <span>Interogări și Plăți</span>
+            </p>
+            <p class="menu-link" routerLink="/amenzi-achitate">
+              <i class="fa-regular fa-clipboard"></i>
+              <span>Amenzi Achitate</span>
+            </p>
+            <p class="menu-link" routerLink="/taxe-nedebitate-achitate">
+              <i class="fa-solid fa-wallet"></i>
+              <span>Taxe Nedebitate Achitate</span>
+            </p>
+  
+            <mat-expansion-panel
+              class="sidenav-accordion"
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header class="sidenav-accordion">
+                <mat-panel-title class="sidenav-accordion">
+                  <div class="panel-title">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="menu-link">Setari</span>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p routerLink="/tipuri-amenzi">
+                <i class="fa-regular fa-folder-open"></i>
+                <span class="menu-link">Tipuri Amenzi</span>
+              </p>
+              <p routerLink="/tipuri-taxe-nedebitate">
+                <i class="fa-solid fa-clipboard"></i>
+                <span class="menu-link">Tipuri Taxe Nedebitate</span>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+  
+          <div class="footer">
+            <div class="logout-button" (click)="logout()">
+              <img src="assets/icons/logout.svg" alt="Deconectare" />
+              <div click="logout()" class="logout-button--text">Deconectare</div>
+            </div>
+          </div>
+        </div>
+      </mat-drawer>
+      <mat-drawer-content class="drawer-content">
+        <router-outlet></router-outlet>
+      </mat-drawer-content>
+    </mat-drawer-container>
+  </div>
+  

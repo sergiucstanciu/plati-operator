@@ -1,0 +1,73 @@
+<div class="navbar">
+    <div class="mobile-version__drawer-container">
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon>{{ isMenuOpen ? "menu_open" : "menu" }}</mat-icon>
+      </button>
+      <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav
+          #sidenav
+          autoFocus="false"
+          mode="over"
+          [(opened)]="isMenuOpen"
+          class="sidenav"
+          (click)="onSidenavClick()"
+        >
+          <div class="drawer__buttons">
+            <mat-accordion>
+              <p class="menu-link" routerLink="/plati-online">
+                <span>Plăți online</span>
+              </p>
+              <p class="menu-link" routerLink="/interogari-plati">
+                <span>Interogari și plăți</span>
+              </p>
+              <p class="menu-link" routerLink="/amenzi-achitate">
+                <span>Amenzi achitate</span>
+              </p>
+              <p class="menu-link" routerLink="/taxe-nedebitate-achitate">
+                <span>Taxe nedebitate achitate</span>
+              </p>
+
+              <!-- </mat-expansion-panel> -->
+  
+              <mat-expansion-panel
+                class="sidenav-accordion"
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header class="sidenav-accordion">
+                <mat-panel-title class="sidenav-accordion">
+                  <div class="panel-title">
+                    <span>Setari</span>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p routerLink="/tipuri-amenzi">
+                <span>Tipuri Amenzi</span>
+              </p>
+              <p routerLink="/tipuri-taxe-nedebitate">
+                <span>Tipuri Taxe Nedebitate</span>
+              </p>
+            </mat-expansion-panel>
+            </mat-accordion>
+  
+            <div class="footer">
+              <div class="logout-button" (click)="logout()">
+                <img src="assets/icons/logout.svg" alt="Deconectare" />
+                <div class="logout-button--text">Deconectare</div>
+              </div>
+            </div>
+          </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <main>
+            <router-outlet></router-outlet>
+          </main>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+    <div class="username">{{ username }}</div>
+    <div class="username__icon">
+      <div class="username__icon--letters">{{ usernameLetters }}</div>
+    </div>
+  </div>
+  

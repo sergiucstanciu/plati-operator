@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../src/assets/variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100%;
+}
+body {
+  text-rendering: optimizeSpeed;
+  margin: 0 auto;
+  min-width: 21.56rem;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $grey-lighten-3;
+}
+
+.action-btn {
+  padding: 4px 5px;
+  border-radius: 3px;
+  border: 1px solid;
+  align-items: center;
+  cursor: pointer;
+
+  .btn-img {
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+  &.edit {
+    background-color: #ec971f;
+    border-color: #e08e0b;
+  }
+  &.delete {
+    background-color: #dd4b39;
+    border-color: #da422f;
+  }
+}
